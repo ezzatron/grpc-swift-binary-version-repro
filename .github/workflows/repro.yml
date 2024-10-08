@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          curl -sSL https://github.com/grpc/grpc-swift/releases/download/1.24.0/protoc-grpc-swift-plugins-linux-x86_64-1.24.0.zip -o protoc-grpc-swift-plugins.zip
+          curl -sSL https://github.com/grpc/grpc-swift/releases/download/1.23.1/protoc-grpc-swift-plugins-linux-x86_64-1.23.1.zip -o protoc-grpc-swift-plugins.zip
           unzip protoc-grpc-swift-plugins.zip
           ./protoc-gen-swift --version
           ./protoc-gen-grpc-swift --version
@@ -15,7 +15,7 @@ jobs:
     runs-on: macos-latest
     steps:
       - run: |
-          curl -sSL https://github.com/grpc/grpc-swift/releases/download/1.24.0/protoc-grpc-swift-plugins-1.24.0.zip -o protoc-grpc-swift-plugins.zip
+          curl -sSL https://github.com/grpc/grpc-swift/releases/download/1.23.1/protoc-grpc-swift-plugins-1.23.1.zip -o protoc-grpc-swift-plugins.zip
           unzip protoc-grpc-swift-plugins.zip
           bin/protoc-gen-swift --version
           bin/protoc-gen-grpc-swift --version
